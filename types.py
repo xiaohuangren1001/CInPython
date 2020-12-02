@@ -409,7 +409,7 @@ class Char(CTypeBase):
         return chr(self.value)
 
     def __repr__(self):
-        return 'c-like char(' + chr(self.value) + ')'
+        return 'c-like char(' + repr(chr(self.value)) + ')'
 
     def __eq__(self, other):
         self._type_check(other)
